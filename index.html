@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Pricing calculator|ScriptingWithSaad</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="header">
+            <h2>Product Pricing Calculator</h2>
+            <p>Calculate your product costs, profits, and margins with precision</p>
+        </div>
+
+        <div class="calculator-grid">
+            <div class="input-section">
+                <div class="input-grid">
+                    <div class="input-group">
+                        <label>Quantity</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="quantity" placeholder="Enter quantity">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Product Sourcing Price</label>
+                        <div class="input-wrapper">
+                            <span class="currency-prefix">$</span>
+                            <input type="number" id="sourcingPrice" placeholder="0.00">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Carriage</label>
+                        <div class="input-wrapper">
+                            <span class="currency-prefix">$</span>
+                            <input type="number" id="carriage" placeholder="0.00">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Packaging</label>
+                        <div class="input-wrapper">
+                            <span class="currency-prefix">$</span>
+                            <input type="number" id="packaging" placeholder="0.00">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Shipping</label>
+                        <div class="input-wrapper">
+                            <span class="currency-prefix">$</span>
+                            <input type="number" id="shipping" placeholder="0.00">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Returns</label>
+                        <div class="input-wrapper">
+                            <span class="currency-prefix">$</span>
+                            <input type="number" id="returns" placeholder="0.00">
+                        </div>
+                    </div>
+
+                    <div class="input-group highlight">
+                        <label>Selling Price</label>
+                        <div class="input-wrapper">
+                            <span class="currency-prefix">$</span>
+                            <input type="number" id="sellingPrice" placeholder="0.00">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-section">
+                <div class="result-card">
+                    <div class="result-label">Total Cost</div>
+                    <div class="result-value">
+                        <span class="currency-symbol">$</span>
+                        <span id="totalCost">0.00</span>
+                    </div>
+                    <div class="tooltip">Sum of all costs including sourcing, carriage, packaging, shipping, and returns</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">Gross Profit</div>
+                    <div class="result-value">
+                        <span class="currency-symbol">$</span>
+                        <span id="grossProfit">0.00</span>
+                    </div>
+                    <div class="tooltip">Revenue generated after subtracting total costs (Selling Price - Total Cost)</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">Gross Margin</div>
+                    <div class="result-value" id="grossMargin">0.00%</div>
+                    <div class="tooltip">Percentage of revenue retained after costs ((Gross Profit ÷ Selling Price) × 100)</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">Breakeven Price</div>
+                    <div class="result-value">
+                        <span class="currency-symbol">$</span>
+                        <span id="breakeven">0.00</span>
+                    </div>
+                    <div class="tooltip">Minimum selling price needed to cover all costs</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
